@@ -1,0 +1,238 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    /* Cor preta de fundo */
+    color: #fff;
+    /* Cor do texto, ajuste conforme necessário para garantir boa legibilidade */
+}
+
+.top-bar {
+    background-image: url(imagens/africa.png);
+    height: 2em;
+    /* Ajuste conforme necessário */
+}
+
+header {
+    background-image: url(imagens/africa4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F8BC4C;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Concert One', cursive;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+
+
+}
+h2 {
+    margin: 0;
+    font-size: 5em;
+
+
+}
+.section-3{
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.section-text{
+    flex: 1;
+    margin-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+.pagina2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.detalhes-noticia {
+    color: #000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.detalhes-noticia img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+#depoimentos {
+    color: #000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.depoimento {
+    margin-top: 30px;
+}
+
+.depoimento img {
+    max-width: 500px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    max-width: calc(33.33% - 20px);
+    /* Ajusta o tamanho da imagem para 33.33% da largura da linha, com margens entre as imagens */
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color: #F8BC4C;
+    /* Fundo azul */
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Concert One', cursive;
+}
+
+footer p {
+    margin: 0;
+}
+
+.italico{
+    font-style: italic;
+}
+.arquivo{
+    font-size: 12px;
+}
+
+.pagina2 a {
+    display: inline-block;
+    background-color: #F8BC4C;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagina2 a i {
+    margin-right: 10px;
+}
+
+.pagina2 a:hover {
+    color: #000;
+    /* Define a cor das letras para preto no hover */
+}
+
+#botaoTopo {
+   
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#botaoTopo:hover {
+    background-color: chocolate;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* ... Seu CSS existente ... */
+
+/* Responsividade geral */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .section-text {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .detalhes-noticia img {
+        max-width: 100%;
+    }
+
+    .depoimento img {
+        max-width: 100%;
+    }
+
+    .galeria img {
+        max-width: calc(50% - 20px);
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .pagina2 a {
+        font-size: 14px;
+    }
+}
+
+/* Adaptação para telas pequenas */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    .depoimento img {
+        max-width: 80%;
+    }
+
+    .galeria img {
+        max-width: calc(100% - 20px);
+    }
+}
+
+/* ... Seu CSS existente ... */

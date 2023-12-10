@@ -1,0 +1,518 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    /* Cor preta de fundo */
+    color: #fff;
+    /* Cor do texto, ajuste conforme necessário para garantir boa legibilidade */
+}
+
+
+.top-bar {
+    background-image: url(imagens/africa.png);
+    height: 2em;
+    /* Ajuste conforme necessário */
+}
+
+header {
+    background-image: url(imagens/africa4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Concert One', cursive;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+
+}
+
+/* Cores específicas para cada parte do texto */
+h1 span:first-child {
+    color: #F8BC4C;
+    /* Azul para "AFRO" */
+}
+
+h1 span:last-child {
+    color: #F8BC4C;
+    /* Vermelho para "BAHIA" */
+}
+
+
+nav {
+    background-color: #F8BC4C;
+    padding: 1em 0;
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1em;
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave de cor */
+    font-size: 2em;
+}
+
+nav a:hover {
+    color: white;
+    /* Altera a cor para azul quando o mouse passa por cima */
+}
+
+
+
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#about {
+    background-color: #F8BC4C;
+    color: black;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
+#miniatura {
+    width: 360px;
+    height: 180px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* Espaço entre o texto e a imagem */
+}
+
+
+#gallery {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 1px;
+    color: #F8BC4C;
+}
+
+.carousel-control-next {
+    right: 1px;
+    color: #F8BC4C;
+}
+
+
+footer {
+    background-color: #F8BC4C;
+    /* Fundo azul */
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Concert One', cursive;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact,
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    background-color: #F8BC4C;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-media a i {
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    color: #000;
+    /* Define a cor das letras para preto no hover */
+}
+
+img {
+    width: 100%;
+    /* A imagem ocupará 100% da largura do contêiner pai */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+    display: block;
+    /* Remove espaços indesejados abaixo da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem no contêiner pai */
+}
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: chocolate;
+    color: #fff;
+}
+
+
+/* Adaptação para telas menores */
+@media screen and (max-width: 600px) {
+    .noticia {
+        flex-direction: column;
+        /* Empilha os elementos em coluna em telas menores */
+        align-items: flex-start;
+        /* Alinha os elementos à esquerda ao empilhar */
+    }
+
+    .noticia img {
+        margin-right: 0;
+        /* Remove a margem à direita da imagem em telas menores */
+        margin-bottom: 10px;
+        /* Adiciona espaço abaixo da imagem em telas menores */
+    }
+}
+
+
+
+.pagina2 {
+    background-color: #fff;
+}
+
+
+/* Adicionando responsividade */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 1em 0;
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    img {
+        max-width: 768px;
+        /* Largura máxima da imagem em telas maiores que 768px */
+    }
+}
+
+@media (min-width: 1024px) {
+    img {
+        max-width: 1024px;
+        /* Largura máxima da imagem em telas maiores que 1024px */
+    }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 767px) {
+
+    .text-content,
+    .image-container {
+        flex: 1 100%;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .text-content {
+        flex: 2;
+    }
+
+    .image-container {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-content {
+        flex: 3;
+    }
+
+    .image-container {
+        flex: 2;
+    }
+}
+
+#news {
+    text-align: center;
+    /* Centraliza os elementos internos horizontalmente */
+
+
+
+}
+
+.noticia {
+    background-color: #F8BC4C;
+    display: flex;
+    align-items: center;
+    /* Centraliza os elementos internos verticalmente */
+    justify-content: center;
+    /* Centraliza os elementos internos horizontalmente */
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+    /* Alinha o texto à esquerda dentro da div */
+}
+
+.noticia img {
+    max-width: 100%;
+    margin-right: 20px;
+    /* Adiciona espaço entre a imagem e o conteúdo da notícia */
+}
+
+.conteudo-noticia {
+    flex-grow: 1;
+    /* Faz o conteúdo ocupar o espaço disponível restante */
+}
+
+.conteudo-noticia h2 {
+    margin: 0;
+}
+
+/* Adaptação para telas menores */
+@media screen and (max-width: 600px) {
+    .noticia {
+        flex-direction: column;
+        /* Empilha os elementos em coluna em telas menores */
+        align-items: flex-start;
+        /* Alinha os elementos internos à esquerda em telas menores */
+        text-align: center;
+        /* Centraliza o texto em telas menores */
+    }
+
+    .noticia img {
+        margin-right: 0;
+        /* Remove a margem à direita da imagem em telas menores */
+        margin-bottom: 10px;
+        /* Adiciona espaço abaixo da imagem em telas menores */
+    }
+}
+
+
+
+
+#depoimentos {
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.galeria img {
+    max-width: 100%;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.depoimento {
+    margin-top: 30px;
+}
+
+.depoimento img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.depoimento p {
+    margin-top: 10px;
+}
+
+/* ... Seu CSS existente ... */
+
+/* Responsividade geral */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        padding: 0.5em 0;
+    }
+
+    nav a {
+        padding: 0.5em 0;
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    #miniatura {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact,
+    .social-media {
+        margin-bottom: 10px;
+    }
+
+    .social-media a {
+        padding: 5px 10px;
+    }
+
+    .depoimento {
+        text-align: center;
+    }
+
+    .depoimento img {
+        max-width: 80px;
+    }
+}
+
+/* Adaptação para telas pequenas */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        padding: 0.5em 0;
+    }
+
+    nav a {
+        padding: 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 0.5em;
+    }
+
+    .text-content,
+    .image-container {
+        flex: 1 100%;
+        margin-right: 0;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+    }
+
+    .depoimento img {
+        max-width: 60px;
+    }
+}
+
+/* ... Seu CSS existente ... */
